@@ -15,8 +15,8 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.cluster import KMeans
 # 导入分层聚类图像输出模块
 from scipy.cluster.hierarchy import dendrogram, ward
-# 读取聚类的源数据
 
+# 读取聚类的源数据
 data = pd.read_csv('car_data.csv', encoding='gbk')
 # 摘取出需要处理的数据部分
 train_x = data[['人均GDP', '城镇人口比重', '交通工具消费价格指数', '百户拥有汽车量']]
