@@ -13,8 +13,8 @@ from efficient_apriori import apriori as ap
 data = pd.read_csv('Market_Basket_Optimisation.csv', header=None)
 # 调整显示列数，也可用pd.options.display.max_columns = 50
 pd.set_option('max_columns', None)
-# 创建用于合并采购物品的列
 
+# 创建用于合并采购物品的列
 combi = []
 # 按照行数遍历
 for i in range(0, data.shape[0]):
